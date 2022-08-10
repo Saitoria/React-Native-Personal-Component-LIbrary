@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet,Text,View} from 'react-native';
+import Login1 from './app/screens/LoginScreens/Login1';
 
 export default function App()
 {
   return(
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-      </View>
+    <Login1/>
   )
 }
 
