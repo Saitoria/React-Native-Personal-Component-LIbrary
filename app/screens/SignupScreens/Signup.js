@@ -1,56 +1,44 @@
 import React from 'react';
-import { StyleSheet,View,Text,ImageBackground,TextInput,TouchableWithoutFeedback,ScrollView,Dimensions,Image} from 'react-native';
+import { StyleSheet,View,Text,ImageBackground,TextInput,TouchableWithoutFeedback,ScrollView,Dimensions} from 'react-native';
 
 //Login screen 0 with a background screen
-function Login1()
+function Signup()
 {
     return(
         <ScrollView style={{flex:1,width:'100%',}}>
         <ImageBackground source={require('../../resources/images/login0.jpg')} resizeMode="cover" style={styles.imgBackground}>
-            
+            <View style={styles.mainContainer}>
             <View style={styles.topContainer}>
-                <Text style={styles.headerText}>Log in</Text>
+                <Text style={styles.headerText}>Sign up</Text>
             </View>
             <View style={styles.bottomContainer}>
-
-                <View style={styles.userProfileContainer}>
-
-                <View>
-                <Image source={require('../../resources/images/user.png')} style={styles.userImg}>
-                </Image>
-                </View>
-
-                <View >
-                <Text style={styles.container2Text}>
-                Swis Software
+                <Text style={styles.containerText}>
+                    It seems we don't have your account.{'\n'}
+                    Let's create a new account for you
                 </Text>
-                <Text style={styles.emailText}>
-                swissoftware@gmail.com
-                </Text>
-                </View>
-
-                </View>
 
                 <TextInput 
                 style={styles.txtInput} 
-                placeholder={'Password'}
+                placeholder={'Name'}
                 placeholderTextColor={'black'}
                 placeholderStyle={{fontFamily:'OpenSans', marginLeft:50,}} >
                 </TextInput>
+
+                <TextInput style={styles.txtInput2} placeholder={'Password'} placeholderTextColor={'black'}>
+                </TextInput>
+
+                <Text style={styles.containerText}>
+                    By selecting Agree and continue below,{'\n'}
+                    I agree to Terms of Services and Privacy Policies
+                </Text>
 
                 <TouchableWithoutFeedback>
                 <View style={styles.customButton}>
                     <Text style={styles.buttonText}>Agree and Continue</Text>
                 </View>
                 </TouchableWithoutFeedback>
-
-                <Text style={styles.containerText}>
-                Forgot your password?
-                </Text>
-
-
             </View>
-            
+            </View>
            
         </ImageBackground>
         </ScrollView>
@@ -58,6 +46,14 @@ function Login1()
 }
 
 const styles = StyleSheet.create({
+    mainContainer:{
+        height:'100%',
+        width:'100%',
+        flex:1,
+        flexGrow:1,
+        margin:0,
+        padding:0,
+    },
     imgBackground:{
         flex:1,
         width:'100%',
@@ -80,12 +76,12 @@ const styles = StyleSheet.create({
         top:'30%',
         marginLeft:"7%",
         width:'90%',
-        height:'45%',
+        height:'60%',
         alignContent:'center',
         alignSelf:'center',
     },
     containerText:{
-        color:'rgba(88,196,248,1)',
+        color:'white',
         fontSize:16,
         marginLeft:'7%',
         marginTop:'7%',
@@ -93,11 +89,21 @@ const styles = StyleSheet.create({
     },
     txtInput:{
         width:'90%',
-        height:'13%',
+        height:'10%',
         backgroundColor:'white',
         borderRadius:10,
         alignSelf:'center',
-        marginTop:'9%',
+        marginTop:'12%',
+        color:'black',
+        fontFamily:'OpenSans',
+    },
+    txtInput2:{
+        width:'90%',
+        height:'10%',
+        backgroundColor:'white',
+        borderRadius:10,
+        alignSelf:'center',
+        marginTop:'7%',
         color:'black',
         fontFamily:'OpenSans',
     },
@@ -105,9 +111,9 @@ const styles = StyleSheet.create({
         backgroundColor:'rgba(88,196,248,1)',
         width:'90%',
         alignSelf:'center',
-        height:'13%',
+        height:'10%',
         borderRadius:10,
-        marginTop:'10%',
+        marginTop:'12%',
         alignItems:'center',
         alignContent:'center',
         justifyContent:'center',
@@ -119,30 +125,6 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         fontFamily:'OpenSans',
     },
-    userImg:{
-        width:65,
-        height:65,
-        borderRadius:32.5,
-        margin:10,
-    },
-    userProfileContainer:{
-        flexDirection:'row',
-        width:'100%',
-        height:'20%',
-    },
-    emailText:{
-        color:'white',
-        fontSize:13,
-        marginLeft:'7%',
-        fontFamily:'OpenSans',
-    },
-    container2Text:{
-        color:'white',
-        fontSize:16,
-        marginLeft:'7%',
-        marginTop:'7%',
-        fontFamily:'OpenSans-Bold',
-    },
 });
 
-export default Login1;
+export default Signup;
