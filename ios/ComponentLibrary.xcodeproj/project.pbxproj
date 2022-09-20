@@ -14,8 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ComponentLibrary-ComponentLibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ComponentLibrary-ComponentLibraryTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		873536FE71364F6BB11EA3C2 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C87A55702DD841D4866A18EA /* OpenSans-Bold.ttf */; };
-		045C34CC03134DBAABE169D7 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A44FFDBC82540C09FFF4923 /* OpenSans.ttf */; };
+		9A7803902C6B47F5876FD082 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36AA2E30D8064462BD1D16FD /* OpenSans-Bold.ttf */; };
+		A9850D77A65F46569DDE9F79 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57938E637D3C408C9C01BB75 /* OpenSans.ttf */; };
+		733EC13D62FB41648E2C26D4 /* Pd-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FED5896D56F47D29DB5FD85 /* Pd-Regular.ttf */; };
+		4EA4AB52BB624831B6F8C030 /* Pd-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9E0A97182145F49B566DB6 /* Pd-SemiBold.ttf */; };
+		4EC85EA3E0334CCF93054E9E /* Pd2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57370819D9014728ADAF47DB /* Pd2-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +49,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ComponentLibrary/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ComponentLibrary-ComponentLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLibrary-ComponentLibraryTests.release.xcconfig"; path = "Target Support Files/Pods-ComponentLibrary-ComponentLibraryTests/Pods-ComponentLibrary-ComponentLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		C87A55702DD841D4866A18EA /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2A44FFDBC82540C09FFF4923 /* OpenSans.ttf */ = {isa = PBXFileReference; name = "OpenSans.ttf"; path = "../assets/fonts/OpenSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36AA2E30D8064462BD1D16FD /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../app/resources/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57938E637D3C408C9C01BB75 /* OpenSans.ttf */ = {isa = PBXFileReference; name = "OpenSans.ttf"; path = "../app/resources/fonts/OpenSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FED5896D56F47D29DB5FD85 /* Pd-Regular.ttf */ = {isa = PBXFileReference; name = "Pd-Regular.ttf"; path = "../app/resources/fonts/Pd-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D9E0A97182145F49B566DB6 /* Pd-SemiBold.ttf */ = {isa = PBXFileReference; name = "Pd-SemiBold.ttf"; path = "../app/resources/fonts/Pd-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57370819D9014728ADAF47DB /* Pd2-Regular.ttf */ = {isa = PBXFileReference; name = "Pd2-Regular.ttf"; path = "../app/resources/fonts/Pd2-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +162,11 @@
 		9EF2069DB19646C39B351930 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				C87A55702DD841D4866A18EA /* OpenSans-Bold.ttf */,
-				2A44FFDBC82540C09FFF4923 /* OpenSans.ttf */,
+				36AA2E30D8064462BD1D16FD /* OpenSans-Bold.ttf */,
+				57938E637D3C408C9C01BB75 /* OpenSans.ttf */,
+				8FED5896D56F47D29DB5FD85 /* Pd-Regular.ttf */,
+				7D9E0A97182145F49B566DB6 /* Pd-SemiBold.ttf */,
+				57370819D9014728ADAF47DB /* Pd2-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				873536FE71364F6BB11EA3C2 /* OpenSans-Bold.ttf in Resources */,
-				045C34CC03134DBAABE169D7 /* OpenSans.ttf in Resources */,
+				9A7803902C6B47F5876FD082 /* OpenSans-Bold.ttf in Resources */,
+				A9850D77A65F46569DDE9F79 /* OpenSans.ttf in Resources */,
+				733EC13D62FB41648E2C26D4 /* Pd-Regular.ttf in Resources */,
+				4EA4AB52BB624831B6F8C030 /* Pd-SemiBold.ttf in Resources */,
+				4EC85EA3E0334CCF93054E9E /* Pd2-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
